@@ -166,8 +166,7 @@ a img{
   position: relative;
   height: 800px;
   width: auto;
-  background-color: #f3f3f3;
-  background: url('images/slide01.jpg') center 30% no-repeat;
+  background-color: #fff;
   background-size: cover;
 }
 

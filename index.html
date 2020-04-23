@@ -13,9 +13,15 @@
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="$$hosted_libs_prefix$$/$$version$$/material.min.css">
   <link rel="stylesheet" href="styles.css">
 </head>
+
+<script>
+  function resizeIframe(obj) {
+    // console.log(this.contentWindow.document.body.scrollHeight);
+    obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+  }
+</script>
 
 <body>
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
@@ -47,7 +53,8 @@
       </div>
     </div>
     <div class="android-drawer mdl-layout__drawer">
-      <span class="mdl-layout-title" style="background-size: cover; background-image: url('https://blog.aulaformativa.com/wp-content/uploads/2016/06/fondos-de-pantalla-para-programadores-AndroidDevelopers.jpg');">
+      <span class="mdl-layout-title"
+        style="background-size: cover; background-image: url('https://blog.aulaformativa.com/wp-content/uploads/2016/06/fondos-de-pantalla-para-programadores-AndroidDevelopers.jpg');">
       </span>
       <nav class="mdl-navigation">
         <span class="mdl-navigation__link" href="">Introducción</span>
@@ -57,10 +64,12 @@
       </nav>
     </div>
     <div class="android-content mdl-layout__content">
-      <a name="top"></a>
-      <div style="padding: 20px;">
-        <iframe src="default.html" name="iframe"></iframe>
-      </div>
+      <!-- <iframe height="150%!important" src="default.html" name="iframe"></iframe> -->
+      <iframe src="default.html" frameborder="0" name="iframe" scrolling="no" onload="resizeIframe(this);">
+      </iframe>
+      <!-- <iframe src="default.html" sandbox="allow-same-origin"
+        onload="this.style.height=(this.contentWindow.document.body.scrollHeight+20)+'px';">
+</iframe> -->
     </div>
     <footer class="android-footer mdl-mega-footer">
       <div class="mdl-mega-footer--bottom-section">
@@ -68,13 +77,5 @@
       </div>
     </footer>
 </body>
-</html>
 
-<style>
-  iframe {
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    height: 1500px !important;
-  }
-</style>
+</html>
