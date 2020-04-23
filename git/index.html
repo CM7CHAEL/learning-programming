@@ -1,30 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../defaultCourse.css">
   <title>Git</title>
 </head>
+
 <body>
   <div id="container">
     <h1><span>Git</span></h1>
     <section class="principal">
       <aside>
-        <p style="text-align: justify!important;">¿Qué es Git?
-          <br> Git es un sistema de control de versiones que originalmente fue diseñado para operar en un entorno Linux.
-          Actualmente Git es multiplataforma, es decir, que ahora ya no solamente es compatible con Linux, sino también
-          con MacOS y Windows.
+        <p style="text-align: justify!important;">Control de versiones<br>
           Un sistema de control de versiones es el conjunto de herramientas que tenemos disponibles para poder gestionar
           de una forma eficiente las distintas versiones de nuestros proyectos.
         </p>
       </aside>
       <main>
-        <p> Git es un sistema de control de versiones que originalmente fue diseñado para operar en un entorno Linux.
+        <p>
+          Git es un sistema de control de versiones que originalmente fue diseñado para operar en un entorno Linux.<br>
           Actualmente Git es multiplataforma, es decir, que ahora ya no solamente es compatible con Linux, sino también
           con MacOS y Windows.
-          Un sistema de control de versiones es el conjunto de herramientas que tenemos disponibles para poder gestionar
-          de una forma eficiente las distintas versiones de nuestros proyectos.</p>
+        </p>
         <h4>Características importantes de Git</h4>
         <div id="app">
           <ul>
@@ -35,13 +34,11 @@
             <li>
               La integridad con la que cuenta es bastante seria. No existen cambios, corrupción en archivos o cualquier
               alteración sin que Git lo sepa. Esto funciona gracias a una verificación con la que cuenta mediante un
-              checksum,
-              que es básicamente una suma de comprobación que se hace previo al almacenamiento de información.
+              checksum, que es básicamente una suma de comprobación que se hace previo al almacenamiento de información.
             </li>
             <li>
               Casi todo en Git es local. Es difícil que se necesiten recursos o información externos, basta con los
-              recursos
-              locales con los que cuenta.
+              recursos locales con los que cuenta.
             </li>
           </ul>
           <h4>Git cuenta con 3 estados en los que podemos localizar nuestros archivos:</h4>
@@ -75,11 +72,9 @@
           <h4>¿Qué es un Sistema Control de Versiones?</h4>
           <p>
             Un sistema que registra los cambios realizados sobre un archivo o conjunto de archivos a lo largo del
-            tiempo.
-            Este tipo de sistemas nos permiten volver en el tiempo y salvar nuestro trabajo.
+            tiempo. Este tipo de sistemas nos permiten volver en el tiempo y salvar nuestro trabajo.
             La idea con este curso es ser capaces de crear un proyecto del cual tendremos siempre las versiones que
-            modificamos
-            a lo largo del desarrollo.
+            modificamos a lo largo del desarrollo.
           </p>
           <h4>Los tipos de sistemas de control son:</h4>
           <ul>
@@ -88,10 +83,9 @@
             </li>
             <li>
               Centralizado: No depende únicamente de un computador en el que se trabaja, sino que depende del súper
-              servidor
-              en donde se almacena la información. El servidor provee las copias a sus hijos, pero solo guarda los
-              cambios
-              en un solo lugar.
+              servidor en donde se almacena la información. El servidor provee las copias a sus hijos, pero solo guarda
+              los
+              cambios en un solo lugar.
             </li>
             <li>
               Sistema de control distribuidos: Cada uno de los que participan en el proyecto, tienen copia del proyecto
@@ -117,34 +111,97 @@
           <span>
             Además con Git puedes trabajar offline y te crea códigos hexadecimales para hacer referencias
           </span>
-
-          <h4>Los tres estados de Git</h4>
+          <h4>Los tres estados de Git: Estos tres estados representan el ciclo de vida de nuestros archivos dentro de la
+            plataforma.</h4>
           <ul>
             <li>Working Directory</li>
             <li>Staging Area. Esta es una área de preparación.</li>
             <li>Git Directory (repository)</li>
           </ul>
-          <span>
-            Estos tres estados representan el ciclo de vida de nuestros archivos dentro de la plataforma.
-          </span>
-
-          <span> Git reset –soft , --mixed</span><br>
-          <span> Git log –online</span> <br>
-          <span> Git branch (‘Multiples variants del reositorio) .</span><br>
-          <span> git branch –l</span><br>
-          <span> git branch –D name</span><br>
-          <span> git branch –m nameAntiguo nameNew</span><br>
-          <span> git checkout (Moviendonos entre ramas y versions)</span><br>
-          <span>master -- git merge rama1</span><br>
+          <h3>Comandos de git</h3>
+          <ul>
+            <li>git help:<br>
+              <div>
+                Muestra una lista con los comandos más utilizados en GIT
+              </div>
+            </li>
+            <li>git init: <br>
+              <div>
+                Este comando se usa para crear un nuevo repertorio en GIT
+              </div>
+            </li>
+            <li>Quitar seguimiento git de un proyecto
+              <div>
+                rm -rf .git
+              </div>
+            </li>
+            <li>git add . : <br>
+              <div>
+                Agrega al repositorio TODOS los archivos y carpetas que estén en nuestro proyecto.
+              </div>
+            </li>
+            <li>git clone : <br>
+              <div>
+                Se usa con el propósito de clonar proyectos que se encuentran en un plataforma(gitHub, gitLab)
+              </div>
+            </li>
+            <li>git commit -m "mensaje" :<br>
+              <div>
+                Hace commit de los archivos que han sido modificados y GIT los está siguiendo.
+              </div>
+            </li>
+            <li>git checkout -b NombreDeBranch :<br>
+              <div>
+                Crea un nuevo branch y automaticamente GIT se cambia al branch creado, clonando el branch
+                desde donde ejecutamos el comando.
+              </div>
+            </li>
+            <li>git status:<br>
+              <div>
+                Este comando muestra la lista de los archivos que se han cambiado junto con los archivos
+                que están por ser añadidos o comprometidos.
+              </div>
+            </li>
+            <li>git push: <br>
+              <div>
+                Este es uno de los comandos más básicos. Un simple push envía los cambios que se han hecho
+                en la rama principal de los repertorios remotos que están asociados con el directorio que está
+                trabajando. Por ejemplo: git push origin master
+              </div>
+            </li>
+            <li> git checkout: <br>
+              <div>
+                El comando checkout se puede usar para crear ramas o cambiar entre ellas.
+              </div>
+            <li> git pull: <br>
+              <div>
+                Hace una actualización en nuestro branch local, desde un branch remoto que indicamos en el comando.
+              </div>
+            </li>
+            <li> git diff: <br>
+              <div>
+                Este comando se usa para hacer una lista de conflictos. Para poder ver conflictos con el archivo base
+                usa:
+                git diff --base
+              </div>
+            </li>
+          </ul>
         </div>
-
         <h4>Referencia bibliográfica</h4>
         <ul>
-          <li><a href="https://git-scm.com/docs">Documentación</a></li>
-          <li><a target="_blank" href="www.platzi">Curso de platzi</a></li>
+          <li><a href="https://git-scm.com/docs">Documentación de git</a></li>
+          <li><a target="_blank" href="https://platzi.com/">Curso de platzi</a></li>
+          <li><a target="_blank" href="https://www.hostinger.es/tutoriales/comandos-de-git">https://www.hostinger.es/tutoriales/comandos-de-git</a></li>
+          <li><a target="_blank" href="http://www.7sabores.com/blog/git-comandos-basicos">http://www.7sabores.com/blog/git-comandos-basicos</a></li>
         </ul>
       </main>
     </section>
   </div>
 </body>
 </html>
+
+<style>
+  div {
+    margin-left: 20px;
+  }
+</style>
