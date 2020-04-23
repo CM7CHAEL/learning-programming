@@ -18,7 +18,6 @@
 
 <script>
   function resizeIframe(obj) {
-    // console.log(this.contentWindow.document.body.scrollHeight);
     obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
   }
 </script>
@@ -64,12 +63,8 @@
       </nav>
     </div>
     <div class="android-content mdl-layout__content">
-      <!-- <iframe height="150%!important" src="default.html" name="iframe"></iframe> -->
       <iframe src="default.html" frameborder="0" name="iframe" scrolling="no" onload="resizeIframe(this);">
       </iframe>
-      <!-- <iframe src="default.html" sandbox="allow-same-origin"
-        onload="this.style.height=(this.contentWindow.document.body.scrollHeight+20)+'px';">
-</iframe> -->
     </div>
     <footer class="android-footer mdl-mega-footer">
       <div class="mdl-mega-footer--bottom-section">
@@ -77,5 +72,9 @@
       </div>
     </footer>
 </body>
-
 </html>
+<style>
+  iframe {
+    height: 500px;
+  }
+</style>
