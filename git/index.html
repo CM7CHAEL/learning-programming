@@ -4,7 +4,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../defaultCourse.css">
   <title>Git</title>
 </head>
 
@@ -204,4 +203,147 @@
   div {
     margin-left: 20px;
   }
+  @import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Cinzel);
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+  color: #111;
+  background: #fefefe;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  max-width: 64rem;
+  min-width: 18.75rem;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+h1,
+h4 {
+  font-family: 'Cinzel', serif;
+  font-weight: normal;
+  font-size: 1rem;
+  padding: 1em 0;
+}
+
+h1 {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  border-bottom: 4px double darkorange;
+}
+
+h1:first-line {
+  font-size: 3rem;
+  letter-spacing: 0 .5em;
+  font-variant: small-caps;
+}
+
+p {
+  padding: .5em 0;
+}
+
+.principal {
+  line-height: 1.5em;
+  border-bottom: 1px solid darkorange;
+}
+
+.principal main p:first-child,
+.principal aside p:first-of-type {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.principal main {
+  margin-top: 2em;
+}
+
+.principal main p:first-child:first-line {
+  font-variant: small-caps;
+  font-size: 120%;
+  line-height: 120%;
+}
+
+.principal main p:first-child::first-letter {
+  color: darkorange;
+  font-weight: bold;
+  font-size: 5rem;
+  float: left;
+  line-height: 30%;
+  margin: 0 .1em .1em 0;
+}
+
+ul {
+  list-style: none;
+  margin-bottom: 2em;
+}
+
+li:before {
+  content: "\025b8";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  margin: 0;
+  padding: 0;
+}
+
+.principal aside {
+  margin-top: 2em;
+  font-style: italic;
+  color: #555;
+  font-family: serif;
+  border-bottom: 1px solid #d9d9d9;
+  padding: 0 0 1em 0;
+}
+
+.principal aside p:first-line {
+  font-style: normal;
+  font-variant: small-caps;
+  font-size: 120%;
+  line-height: 120%;
+}
+
+@media screen and (min-width: 40em) {
+  h1:first-line {
+    letter-spacing: .5em;
+  }
+
+  h1 span {
+    padding-left: .5em;
+  }
+
+  #container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .principal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .principal main {
+    width: 75%;
+    padding: 0 0 0 2em;
+  }
+
+  .principal aside {
+    width: 25%;
+    border: none;
+    border-right: 1px solid #d9d9d9;
+    padding: 0 2em 0 0;
+    text-align: right;
+  }
+}
 </style>
