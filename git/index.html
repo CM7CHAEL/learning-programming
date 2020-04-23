@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Git</title>
+</head>
+<body>
+  <h2>¿Qué es Git?</h2>
+  <p>
+    Git es un sistema de control de versiones que originalmente fue diseñado para operar en un entorno Linux.
+    Actualmente Git es multiplataforma, es decir, que ahora ya no solamente es compatible con Linux, sino también
+    con MacOS y Windows.
+    Un sistema de control de versiones es el conjunto de herramientas que tenemos disponibles para poder gestionar
+    de una forma eficiente las distintas versiones de nuestros proyectos.
+  </p>
+  <h2>Características importantes de Git</h2>
+  <ul>
+    <li>
+      Git se diferencia de otros sistemas de control de versiones en la forma en la que modela sus datos.
+      Usualmente otros sistemas almacenan la información en una lista de cambios en archivos, mientras Git
+      lo hace como un conjunto de archivos.
+    </li>
+    <li>
+      La integridad con la que cuenta es bastante seria. No existen cambios, corrupción en archivos o cualquier
+      alteración sin que Git lo sepa. Esto funciona gracias a una verificación con la que cuenta mediante un checksum,
+      que es básicamente una suma de comprobación que se hace previo al almacenamiento de información.
+    </li>
+    <li>
+      Casi todo en Git es local. Es difícil que se necesiten recursos o información externos, basta con los recursos
+      locales con los que cuenta.
+    </li>
+  </ul>
+  <h2>Git cuenta con 3 estados en los que podemos localizar nuestros archivos:</h2>
+  <ul>
+    <li>
+      Committed. Es la parte en la que nuestra información está segura alojada en nuestras bases de datos.
+    </li>
+    <li>
+      Modified. En esta parte hemos realizado cambios en nuestros archivos, pero aún no se ven reflejados
+      en nuestra base de datos.
+    </li>
+    <li>
+      Staged. En esta parte marcamos nuestros archivos modificados dejándolos listos para confirmarlos.
+    </li>
+  </ul>
+<h2>Directorios en Git</h2>
+<p>
+  Esta es quizá la parte más importante de Git, ya que es el lugar donde se almacenan los metadatos y las bases
+  de datos para nuestros proyectos, y es justamente lo que se copia cuando clonamos de un ordenador a otro los archivos.
+  Dentro de estos directorios es posible que no solamente tengamos nuestra información útil, sino también ciertos
+  archivos de caché innecesarios, para ello es posible ignorar directorios sin afectar lo necesario de nuestros proyectos.
+  Una buena práctica para tener todo en orden y eliminar lo innecesario es crear un archivo .gitignore donde podamos
+  incluir esos directorios que no dan valor a nuestros proyectos y así mantener solamente lo necesario.
+</p>
+
+<h2>¿Qué es un Sistema Control de Versiones?</h2>
+<p>
+  Un sistema que registra los cambios realizados sobre un archivo o conjunto de archivos a lo largo del tiempo.
+  Este tipo de sistemas nos permiten volver en el tiempo y salvar nuestro trabajo.
+  La idea con este curso es ser capaces de crear un proyecto del cual tendremos siempre las versiones que modificamos
+  a lo largo del desarrollo.
+</p>
+<h2>Los tipos de sistemas de control son:</h2>
+<ul>
+  <li>
+    Local Computer: Solo vive en nuestro computador.
+  </li>
+  <li>
+    Centralizado: No depende únicamente de un computador en el que se trabaja, sino que depende del súper servidor
+    en donde se almacena la información. El servidor provee las copias a sus hijos, pero solo guarda los cambios
+    en un solo lugar.
+  </li>
+  <li>
+    Sistema de control distribuidos: Cada uno de los que participan en el proyecto, tienen copia del proyecto que se realiza, por eso no dependemos de un solo computador que almacene toda la información.
+    Git es un Sistema de Control de Versiones Distribuido.
+  </li>
+</ul>
+<h2>Los beneficios de usar Git</h2>
+
+<h2>¿Cómo nace Git?</h2>
+<p>
+  El sistema open source de **Linux ** necesitaba estar en un sistema de control de versiones. Por eso se asociaron
+  con Beatkeeper. Entonces Linux creó su propio sistema de control de versiones distribuido.
+</p>
+<h2>Se centró en:</h2>
+<ul>
+  <li>Velocidad.</li>
+  <li>Diseño sencillo.</li>
+  <li>Fuerte apoyo en el desarrollo no lineal.</li>
+  <li>Completamente distribuido.</li>
+  <li>Capaz de manejar grandes proyectos.</li>
+</ul>
+<span>
+  Además con Git puedes trabajar offline y te crea códigos hexadecimales para hacer referencias
+</span>
+
+<h2>Los tres estados de Git</h2>
+<ul>
+  <li>Working Directory</li>
+  <li>Staging Area. Esta es una área de preparación.</li>
+  <li>Git Directory (repository)</li>
+</ul>
+<span>
+  Estos tres estados representan el ciclo de vida de nuestros archivos dentro de la plataforma.
+</span>
+
+<span>  Git reset –soft   , --mixed</span>
+<span> Git  log –online</span>
+<span> Git branch (‘Multiples variants del reositorio) .</span>
+<span> git branch –l</span>
+<span> git branch –D name</span>
+<span> git branch –m nameAntiguo nameNew</span>
+<span> git checkout (Moviendonos entre ramas y versions)</span>
+<span>master  --      git merge rama1</span>
+
+</body>
+</html>
+<style>
+  p {
+    text-align: justify;
+  }
+</style>
